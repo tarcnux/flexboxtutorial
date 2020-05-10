@@ -4,14 +4,28 @@
   display: flex; /*Iniciando o Flexbox*/  
 }
 
-.item1 {
-  order: -1;
+.search {
+  flex: 1;
 }
 
-.item2 {
-  order: -2;
+@media all and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container > li {
+    flex: 1 1 50%; /*Vai caber 2 ítens por linha 50/50 */
+  }
+  .search > input {
+    text-align: center;
+  }
 }
 
-.item3 {
-  order: -3;
+/*Em telas menores que 400px 1 item por linha*/
+@media all and (max-width: 400px) {
+  .container > li {
+    flex: 1 1 100%;
+  }
+  .search{
+    order: 1; /*Em coluna o item search vai para baixo*/
+  }
 }

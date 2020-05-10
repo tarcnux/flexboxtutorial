@@ -3,11 +3,14 @@ h1 {
   color: maroon;
 }
 
-.container > div {
+.container > li {
   padding: 10px;
   text-align: center;
   font-size: 2em;
   color: #fea;
+  box-sizing: border-box;
+  background-color: #96c3b4;
+  list-style-type: none;
 }
 
 html, body{ 
@@ -15,14 +18,29 @@ html, body{
   margin: 10px;
 }
 
-.container > div:nth-child(1) {
-  background-color: #96ceb4;
+.container {
+  padding: 0;
 }
 
-.container > div:nth-child(2) {
-  background-color: #ff6f69;
+.search-input {
+  background-color: #ff6e68;
+  border: 0;
+  width: 100%;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #fea;
+  color: #fea;
+  font-size: 1em;
 }
 
-.container > div:nth-child(3) {
-  background-color: #88d8b0;
+::placeholder {
+  color: #fea;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.container > li {
+  background-color: #96c3b4;
 }
