@@ -2,9 +2,9 @@
 .container {
   border: 5px solid #fc5;
   display: flex; /*Iniciando o Flexbox*/
-  /* flex-direction: row; Padrão Linha */
-  flex-direction: column;
-  height: 100%;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-wrap: wrap; /* Derrubar os ítens quando não abem na tela*/
+}
+
+.container > div {
+  width: 300px;
 }
