@@ -2,5 +2,12 @@
 .container {
   border: 5px solid #fc5;
   display: flex; /*Iniciando o Flexbox*/
-  flex-direction: row; /*Padrão Linha*/
+  /* flex-direction: row; Padrão Linha */
+  justify-content: flex-end;
+}
+
+.container > div {
+  /* preenchimento do container */
+  flex: 1;
+  /* flex-grow, flex-shrink, flex-basis */
 }
