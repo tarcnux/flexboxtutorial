@@ -5,14 +5,14 @@
 }
 
 .home {
-  flex: 1;
-
-  flex: 1 1 0;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
+  flex: 1 1 200px; 
+  flex-grow: 1; /*Aumentar*/
+  flex-shrink: 1; /*Enconlher*/
+  flex-basis: 200px;
 }
 
 .logout {
-  flex: 1;
+  flex-grow: 1; /*Aumentar*/
+  flex-shrink: 1; /*Enconlher*/
+  flex-basis: 200px;
 }
