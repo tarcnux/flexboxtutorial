@@ -1,31 +1,18 @@
-
 .container {
-  border: 5px solid #fc5;
-  display: flex; /*Iniciando o Flexbox*/  
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.search {
-  flex: 1;
+.container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@media all and (max-width: 600px) {
-  .container {
-    flex-wrap: wrap;
-  }
-  .container > li {
-    flex: 1 1 50%; /*Vai caber 2 ítens por linha 50/50 */
-  }
-  .search > input {
-    text-align: center;
-  }
+.container > .normal {
+  flex: 1 1 150px;
 }
 
-/*Em telas menores que 400px 1 item por linha*/
-@media all and (max-width: 400px) {
-  .container > li {
-    flex: 1 1 100%;
-  }
-  .search{
-    order: 1; /*Em coluna o item search vai para baixo*/
-  }
+.container > .big {
+  flex: 1 1 250px;
 }

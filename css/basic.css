@@ -2,45 +2,7 @@ h1 {
   text-align: center;
   color: maroon;
 }
-
-.container > li {
-  padding: 10px;
-  text-align: center;
-  font-size: 2em;
-  color: #fea;
-  box-sizing: border-box;
-  background-color: #96c3b4;
-  list-style-type: none;
-}
-
-html, body{ 
-  background-color: #fea;
+html, body {
+  background-color: #ffeead;
   margin: 10px;
-}
-
-.container {
-  padding: 0;
-}
-
-.search-input {
-  background-color: #ff6e68;
-  border: 0;
-  width: 100%;
-  outline: 0;
-  background: transparent;
-  border-bottom: 1px solid #fea;
-  color: #fea;
-  font-size: 1em;
-}
-
-::placeholder {
-  color: #fea;
-}
-
-.search-input:focus {
-  outline: none;
-}
-
-.container > li {
-  background-color: #96c3b4;
 }
