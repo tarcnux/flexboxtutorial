@@ -4,15 +4,14 @@
   display: flex; /*Iniciando o Flexbox*/  
 }
 
-.home {
-  flex: 1 1 200px; 
-  flex-grow: 1; /*Aumentar*/
-  flex-shrink: 1; /*Enconlher*/
-  flex-basis: 200px;
+.item1 {
+  order: 3;
 }
 
-.logout {
-  flex-grow: 1; /*Aumentar*/
-  flex-shrink: 1; /*Enconlher*/
-  flex-basis: 200px;
+.item2 {
+  order: 2;
+}
+
+.item3 {
+  order: 1;
 }
