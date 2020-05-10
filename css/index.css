@@ -1,10 +1,18 @@
 
 .container {
   border: 5px solid #fc5;
-  display: flex; /*Iniciando o Flexbox*/
-  flex-wrap: wrap; /* Derrubar os ítens quando não abem na tela*/
+  display: flex; /*Iniciando o Flexbox*/  
 }
 
-.container > div {
-  width: 300px;
+.home {
+  flex: 1;
+
+  flex: 1 1 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.logout {
+  flex: 1;
 }
